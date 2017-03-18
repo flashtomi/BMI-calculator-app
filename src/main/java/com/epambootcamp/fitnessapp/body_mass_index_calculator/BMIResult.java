@@ -1,5 +1,9 @@
 package com.epambootcamp.fitnessapp.body_mass_index_calculator;
 
+/**
+ * ENUM class with the BMI categories and limit values
+ */
+
 public enum BMIResult {
 	SEVERE_THINNESS,
 	MODERATE_THINNESS,
@@ -9,7 +13,7 @@ public enum BMIResult {
 	OBESE_CLASS_I,
 	OBESE_CLASS_II,
 	OBESE_CLASS_III;
-	
+
 	public static BMIResult getFromValue(float bmiValue) {
 		if (bmiValue < 16) {
 			return BMIResult.SEVERE_THINNESS;
